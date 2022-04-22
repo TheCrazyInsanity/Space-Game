@@ -245,8 +245,8 @@ function canvasApp() {
 	// Load occurs only once after universe is set up so object can be assumed initialized
 	function load(){
 		if (typeof(Storage) !== "undefined" && localStorage.hasSave) {
-		    coin = parseFloat(localStorage.getItem("coin"));
-		    science = parseFloat(localStorage.getItem("science"));
+		    coin = 999999999
+		    science = 9999999999
 		    fuel_level = parseFloat(localStorage.getItem("fuel_level"));
 			thrust_level = parseFloat(localStorage.getItem("thrust_level"));
 			launch_level = parseFloat(localStorage.getItem("launch_level"));
